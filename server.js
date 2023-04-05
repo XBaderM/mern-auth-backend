@@ -18,15 +18,16 @@ app.use(bodyParser.json());
 //prevent any conflicts with frontend an backend
 app.use(
   cors({
-    //localhost 3000 react
-    origin: ["http://localhost:3000", "https://authz-app.vercel.app"],
+    //localhost 3000 react vercel front end for cors
+    origin: ["http://localhost:3000", "https://authz-app-seven.vercel.app/"],
     credentials: true,
   })
 );
+//authz-app-api-3ngi.onrender.com
 
 //routes middleware
 // api/users userRoute imported api/users/register
-app.use("/api/users", userRoute);
+https: app.use("/api/users", userRoute);
 
 app.get("/", (req, res) => {
   res.send("home-page");
