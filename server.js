@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use(
   cors({
     //localhost 3000 react vercel front end for cors
-    origin: ["http://localhost:3000", "https://authz-app-seven.vercel.app/"],
+    origin: ["http://localhost:3000", "https://authz-app-seven.vercel.app"],
     credentials: true,
   })
 );
