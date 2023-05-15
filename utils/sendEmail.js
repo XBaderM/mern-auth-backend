@@ -14,7 +14,7 @@ const sendEmail = async (
 ) => {
   // creste email transporte doc nodemail
   const transporter = nodemailer.createTransport({
-    service: "outlook365",
+    service: "Gmail",
     // host: process.env.EMAIL_HOST,
     // port: 587,
     auth: {
